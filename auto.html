@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #87CEEB; 
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .truck {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            bottom: 40px; 
+            animation: truck__drive 6s linear forwards infinite; 
+        }
+
+        /* Кабина грузовика */
+        .truck__cab {
+            width: 100px;
+            height: 80px;
+            background-color: orange;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            border-radius: 10px 10px 0 0;
+            border: 1px solid black; 
+        }
+
+        .truck__body {
+            width: 180px;
+            height: 100px;
+            background-color: orange; 
+            position: absolute;
+            top: 10px;
+            right: 100px;
+            border-radius: 5px;
+            border: 1px solid black; 
+        }
+        
+        .truck__body::after {
+            content: '';
+            position: absolute;
+            bottom: 0; 
+            left: 0;
+            width: 100%;
+            height: 20px; 
+            background-color: rgb(82, 82, 82);
+            border-radius: 2px; 
+        }
+        /* Двери */
+        .truck__door {
+            width: 35px; 
+            height: 60px;
+            background-color: orange;
+            border: 1px solid black;
+            position: absolute;
+            top: 10px;
+            left: 10px; 
+        }
+
+        /* Ручка двери */
+        .truck__door-handle {
+            width: 2px; 
+            height: 15px; 
+            background-color: black; 
+            position: absolute;
+            top: 20px; 
+            right: 22px; 
+        }
+        /* Окно кабины */
+        .truck__window {
+            width: 40px;
+            height: 30px;
+            background-color: lightblue;
+            position: absolute;
+            top: 10px;
+            right:10px;
+            border-radius: 5px;
+        }
+
+        /* Передняя фара */
+        .truck__headlight {
+            width: 15px;
+            height: 11px;
+            background-color: yellow;
+            position: absolute;
+            top: 40px;
+            right: -3px;
+            border-radius: 50% 0 0 50%; 
+            border: 1px solid black;
+        }
+        /* Колеса */
+        .truck__wheel {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+            border: 2px solid gray; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         
+        .truck__wheel::after {
+            content: '';
+            width: 10px; 
+            height: 10px; 
+            background-color: yellow; 
+            position: absolute; 
+            top: calc(50% - 5px); 
+            left: calc(50% - 5px); 
+            z-index: 1; 
+            animation: truck__rotate-square 1s linear infinite;
+        }
+        .truck__wheel--front {
+            right: 20px;
+            bottom: 10px; 
+        }
+
+        .truck__wheel--middle {
+            right: 120px;
+            bottom: 10px
+        }
+
+        .truck__wheel--back {
+            right: 220px; 
+            bottom: 10px
+        }
+
+        /* Дорога */
+        .road {
+            width: 100%;
+            height: 50px;
+            background-color: #444;
+            position: absolute;
+            bottom: 0;
+        }
+
+        @keyframes truck__drive {
+            0% {
+                transform: translateX(0); /* Начинаем с левой части экрана */
+            }
+            100% {
+                transform: translateX(calc(100vw - 300px)); /* Движемся до правой части экрана, не выходя за рамки */
+            }
+        }
+
+        /* Анимация вращения квадрата */
+        @keyframes truck__rotate-square {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }       
+    </style>
+</head>
+<body>
+    <div class="truck">
+        <!-- Кабина грузовика -->
+        <div class="truck__cab">
+            <div class="truck__door">
+                <div class="truck__door-handle"></div> 
+            </div>
+            <div class="truck__window"></div>
+            <div class="truck__headlight"></div>
+        </div>
+
+        <!-- Грузовая часть -->
+        <div class="truck__body"></div>
+
+        <!-- Колеса -->
+        <div class="truck__wheel truck__wheel--front"></div>
+        <div class="truck__wheel truck__wheel--middle"></div>
+        <div class="truck__wheel truck__wheel--back"></div>
+    </div>
+    <div class="road"></div>
+</body>
+</html>
