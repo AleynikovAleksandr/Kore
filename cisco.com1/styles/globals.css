@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f6;
+}
+.page-container {
+    width: 100%; 
+    max-width: 1620px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    height: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/Arial-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/Arial-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/Arial-Medium.ttf);
+    font-weight: 450;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/Arial-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url(../assets/fonts/Arial-Bold.ttf);
+    font-weight: 800;
+}
