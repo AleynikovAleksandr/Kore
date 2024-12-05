@@ -79,6 +79,7 @@ p.product-cards__description {
 
 .product-cards__link:hover {
     text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .product-cards__link:hover .product-cards__link-icon {
