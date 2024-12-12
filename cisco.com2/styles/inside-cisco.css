@@ -1,0 +1,131 @@
+.inside-cisco {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 100px; 
+}
+  
+.inside-cisco__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 50px; 
+    box-sizing: border-box; 
+}
+
+  
+.inside-cisco__title {
+    font-size: 24px;
+    font-weight: 500;
+    font-size: 32px;
+}
+  
+.inside-cisco__links {
+    display: flex;
+    gap: 2px;
+}
+  
+.inside-cisco__link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+  
+.inside-cisco__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 -20px; 
+    box-sizing: border-box; 
+    padding: 0 50px; 
+}
+  
+.inside-cisco__item {
+    flex: 1 1 calc(33.333% - 20px); 
+    min-width: 300px;
+    padding: 20px;
+}
+  
+.inside-cisco__item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.inside-cisco__item-description {
+    font-size: 20px;
+    line-height: 1.5; 
+    font-weight: 300; 
+    letter-spacing: 0; 
+    margin-bottom: 10px; 
+    max-width: 90%; 
+    
+}
+  
+.inside-cisco__item-link {
+    color: #0078d4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    left: 40px;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+
+.inside-cisco__item-link-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiAxMiI+PHBhdGggZD0iTTMuNDA5MTgsMTEuODM1NDVsLS43MDctLjcwN0w3LjgzMTA1LDYsMi42ODQ1Ny44NTM1MmwuNzA3LS43MDcsNS41LDUuNWEuNDk5ODEuNDk5ODEsMCwwLDEsMCwuNzA3WiIgZmlsbD0iIzAwNzBkMiIvPjwvc3ZnPg==");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.inside-cisco__item-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.inside-cisco__item-link:hover .inside-cisco__item-link-icon {
+    transform: translateX(5px);
+}
+
+.inside-cisco__action-link {
+    color: #0078d4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    margin-right: 25px;
+    margin-top: -10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.inside-cisco__action-link-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMiAxMiI+PHBhdGggZD0iTTMuNDA5MTgsMTEuODM1NDVsLS43MDctLjcwN0w3LjgzMTA1LDYsMi42ODQ1Ny44NTM1MmwuNzA3LS43MDcsNS41LDUuNWEuNDk5ODEuNDk5ODEsMCwwLDEsMCwuNzA3WiIgZmlsbD0iIzAwNzBkMiIvPjwvc3ZnPg==");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.inside-cisco__action-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.inside-cisco__action-link:hover .inside-cisco__action-link-icon {
+    transform: translateX(5px);
+}
