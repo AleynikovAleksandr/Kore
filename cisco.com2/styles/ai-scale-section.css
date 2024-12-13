@@ -120,3 +120,114 @@ sup {
 .ai-scale-section__secondary-link:hover .ai-scale-section__secondary-link-icon {
     transform: translateX(5px); 
 }
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    
+    .ai-scale-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .ai-scale-section__content {
+        margin: 0 auto;
+        order: 2;
+        left: 60px; 
+    }
+    .ai-scale-section__title {
+        font-size: 32px;
+        transform: translateX(17px); 
+    }
+    .ai-scale-section__description {
+        font-size: 14px;
+        width: 70%; 
+        line-height: 1.6; 
+        margin: 0 18px 15px; 
+        text-align: left; 
+    }
+    .ai-scale-section__links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ai-scale-section__link {
+        transform: translateX(20px); 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .ai-scale-section__image {
+        order: 1; 
+        left: 70px; 
+    }
+    .ai-scale-section__secondary-link-icon {
+        margin-left: 1px; 
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .ai-scale-section {
+        display: flex;               
+        justify-content: center;   
+        align-items: center;                      
+        flex-direction: column; 
+        overflow-x: hidden;     
+    }
+
+    .ai-scale-section__content {
+        margin: 0 auto;
+        order: 2; 
+        left: 2px;
+    }
+    .ai-scale-section__title {
+        font-size: 28px; 
+        transform: translateX(10px); 
+        justify-content: center;     
+        align-items: center;
+    }
+    .ai-scale-section__description {
+        font-size: 14px;
+        width: 90%; 
+        line-height: 1.4; 
+        margin: 0 10px 15px; 
+        text-align: left; 
+    }
+    .ai-scale-section__links {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .ai-scale-section__link {
+        transform: translateX(10px); 
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .ai-scale-section__image {
+        order: 1; 
+        width: 100%;   
+        display: block;
+        width: 400px;     
+        height: 225px; 
+        justify-content: center;
+        left: -10px; 
+        max-width: 640px;
+        background-image: url("https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/homepage-supporting-story2-splunk-1176x660.jpg");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;      
+    }
+    .ai-scale-section__secondary-link {
+        transform: translateX(-5px); 
+    }
+    .ai-scale-section__secondary-link-icon {
+        margin-left: 3px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

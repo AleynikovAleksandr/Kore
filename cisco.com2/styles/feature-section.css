@@ -74,3 +74,99 @@
     color: #0056b3; 
     border-color: #0056b3; 
 }
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .feature-section {
+        grid-template-columns: 1fr;
+    }
+    .feature-section__content {
+        margin: 0 auto;
+        order: 2;
+        transform: translateX(-85px); 
+        margin-top: -40px;
+    }
+    .feature-section__title {
+        font-size: 32px;
+        transform: translateX(17px); 
+    }
+    .feature-section__description {
+        font-size: 14px;
+        width: 80%; 
+        line-height: 1.6; 
+        margin: 0 18px 15px; 
+        text-align: left; 
+        margin-top: -30px;
+    }
+    .feature-section__links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-section__link {
+        transform: translateX(20px); 
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .feature-section__image {
+        order: 1;  
+        display: block;
+        justify-content: center;
+        margin: 0;
+        margin-left: 70px; 
+
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .feature-section {
+        display: flex;               
+        justify-content: center;   
+        align-items: center;                      
+        flex-direction: column; 
+        overflow-x: hidden;     
+    }
+
+    .feature-section__content {
+        margin: 0 auto;
+        order: 2; 
+        transform: translateX(-10px); 
+    }
+    .feature-section__title {
+        font-size: 28px; 
+        justify-content: center;     
+        align-items: center;
+        transform: translateX(8px);
+        margin-top: -30px;
+    }
+    .feature-section__description {
+        font-size: 14px;
+        width: 50%; 
+        line-height: 1.4; 
+        margin: 0 10px 15px; 
+        text-align: left; 
+        margin-bottom: -5px;
+        margin-top: -20px;
+        
+    }
+    .feature-section__link {
+        transform: translateX(10px); 
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .feature-section__image {
+        order: 1; 
+        width: 100%;   
+        display: block;
+        width: 400px;     
+        height: 225px; 
+        justify-content: center;
+        left: -10px; 
+        max-width: 640px;
+        background-image: url("https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/hp-supporting-story1-hypershield-1176x662.jpg");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        transform: translateX(40px);      
+    }
+}
