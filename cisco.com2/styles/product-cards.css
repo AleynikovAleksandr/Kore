@@ -99,3 +99,121 @@ p.product-cards__description {
     line-height: 40px; 
     color: #333; 
 }
+
+
+@media (max-width: 824px) { 
+
+    .product-cards__item {
+        width: 719px;  
+        height: auto; 
+        margin-top: 10px;  
+        margin-bottom: 0; 
+        box-sizing: border-box;
+        order: 1; 
+    }
+
+    .product-cards__image {
+        width: 719px;  
+        height: 404.44px; 
+        max-width: 100%; 
+        object-fit: cover; 
+        margin-bottom: 0; 
+        gap: 30px;
+        order: 1; 
+    }
+
+    .product-cards__link {
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: #0078d4; 
+        text-decoration: none;
+        position: relative;
+        display: inline-flex; 
+        align-items: center; 
+        order: 2;
+    }
+    
+    .product-cards__title {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 40px;
+        order: 2;
+    }
+
+    p.product-cards__description {
+        font-size: 16px;
+        margin-left: 40px;
+        white-space: normal; 
+        margin-top: 10px;  
+        margin-bottom: 10px;  
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) { 
+
+    .latest-products__title {
+        font-size: 24px; 
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .latest-products {
+        text-align: center; 
+        margin-bottom: 10px; 
+        margin-top: 40px; 
+        align-items: center;  
+    }
+
+    .product-cards__item {
+        width: 450px;  
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        order: 1;
+    }
+
+    .product-cards__image {
+        width: 450px;  
+        height: 253.13px;  
+        max-width: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+        gap: 30px;
+        order: 1;
+    }
+
+    .product-cards__link {
+        text-align: left;
+        margin-left: 40px;  
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: #0078d4;
+        text-decoration: none;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        order: 2;
+    }
+
+    .product-cards__title {
+        font-size: 20px; 
+        margin-left: 40px;
+        margin-top: 40px;
+        order: 2;
+    }
+
+    p.product-cards__description {
+        font-size: 16px;  
+        margin-left: 40px;
+        white-space: normal;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: calc(100% - 90px); 
+        order: 2;
+    }
+}
+

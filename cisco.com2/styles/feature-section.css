@@ -83,7 +83,7 @@
     .feature-section__content {
         margin: 0 auto;
         order: 2;
-        transform: translateX(-85px); 
+        transform: translateX(-95px); 
         margin-top: -40px;
     }
     .feature-section__title {
@@ -130,7 +130,7 @@
     .feature-section__content {
         margin: 0 auto;
         order: 2; 
-        transform: translateX(-10px); 
+        transform: translateX(-20px); 
     }
     .feature-section__title {
         font-size: 28px; 
