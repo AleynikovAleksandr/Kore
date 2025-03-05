@@ -1,0 +1,172 @@
+.feature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center; 
+    padding: 20px;
+    margin-top: 85px;
+}
+
+.feature-section__image {
+    width: 640.55px; 
+    height: 350.9px; 
+    background-image: url("https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/hp-supporting-story1-hypershield-1176x662.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin-top: 10px; 
+    margin-left: -95px;
+}
+  
+.feature-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    white-space: pre;
+    margin-right: -70px; 
+    margin: 0 140px;
+    margin-top: -50px;
+}
+
+.feature-section__title {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 200;
+    max-width: 600px; 
+}
+
+.feature-section__description {
+    width: auto; 
+    height: auto; 
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5; 
+    white-space: pre;
+    margin-top: -30px;
+    color: #000;
+    font-weight: normal;
+    word-spacing: 1px; 
+}
+
+.feature-section__link {
+    display: inline-block;
+    padding: 10px 1.5rem;
+    border: 1px solid #0078d4;
+    border-radius: 4.8rem;
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: -20px;
+    background-color: transparent; 
+}
+
+.feature-section__link:hover {
+    color: #0056b3; 
+    border-color: #0056b3; 
+}
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .feature-section {
+        grid-template-columns: 1fr;
+    }
+    .feature-section__content {
+        margin: 0 auto;
+        order: 2;
+        transform: translateX(-95px); 
+        margin-top: -40px;
+    }
+    .feature-section__title {
+        font-size: 32px;
+        transform: translateX(17px); 
+    }
+    .feature-section__description {
+        font-size: 14px;
+        width: 80%; 
+        line-height: 1.6; 
+        margin: 0 18px 15px; 
+        text-align: left; 
+        margin-top: -30px;
+    }
+    .feature-section__links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-section__link {
+        transform: translateX(20px); 
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .feature-section__image {
+        order: 1;  
+        display: block;
+        justify-content: center;
+        margin: 0;
+        margin-left: 70px; 
+
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .feature-section {
+        display: flex;               
+        justify-content: center;   
+        align-items: center;                      
+        flex-direction: column; 
+        overflow-x: hidden;     
+    }
+
+    .feature-section__content {
+        margin: 0 auto;
+        order: 2; 
+        transform: translateX(-20px); 
+    }
+    .feature-section__title {
+        font-size: 28px; 
+        justify-content: center;     
+        align-items: center;
+        transform: translateX(8px);
+        margin-top: -30px;
+    }
+    .feature-section__description {
+        font-size: 14px;
+        width: 50%; 
+        line-height: 1.4; 
+        margin: 0 10px 15px; 
+        text-align: left; 
+        margin-bottom: -5px;
+        margin-top: -20px;
+        
+    }
+    .feature-section__link {
+        transform: translateX(10px); 
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .feature-section__image {
+        order: 1; 
+        width: 100%;   
+        display: block;
+        width: 400px;     
+        height: 225px; 
+        justify-content: center;
+        left: -10px; 
+        max-width: 640px;
+        background-image: url("https://www.cisco.com/content/dam/cisco-cdc/site/images/photography/homepage/hp-supporting-story1-hypershield-1176x662.jpg");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        transform: translateX(40px);      
+    }
+}
